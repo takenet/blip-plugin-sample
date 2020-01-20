@@ -22,3 +22,18 @@ export const getContacts = async () => {
     
     return items;
 };
+
+export const getThreads = async () => {
+    const { response: { items } } = await IframeMessageProxy.sendMessage({
+        action: 'sendCommand',
+        content: {
+            destination: 'MessagingHubService',
+            command: {
+                method: 'get',
+                uri: '/threads'
+            }
+        }
+    });
+    
+    return items;
+};

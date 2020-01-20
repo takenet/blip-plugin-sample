@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 import { IframeMessageProxy } from 'iframe-message-proxy';
+import './index.scss';
+import * as serviceWorker from './serviceWorker';
 
 IframeMessageProxy.listen();
 ReactDOM.render(<App />, document.getElementById('root'));
