@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { BlipDropdownButtonComponent } from './BlipDropdownButtonComponent';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import { BlipDropdownButtonComponent } from './BlipDropdownButtonComponent'
 
 const BlipDropdownButtonContainer = ({
   buttonClass,
@@ -12,16 +12,16 @@ const BlipDropdownButtonContainer = ({
   arrowSide = 'left',
   footer = [],
 }) => {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false)
 
   const toggleDropdown = () => {
     if (showDropdown) {
-      onCloseDropdown !== undefined && onCloseDropdown();
+      onCloseDropdown !== undefined && onCloseDropdown()
     } else {
-      onOpenDropdown !== undefined && onOpenDropdown();
+      onOpenDropdown !== undefined && onOpenDropdown()
     }
-    setShowDropdown(!showDropdown);
-  };
+    setShowDropdown(!showDropdown)
+  }
 
   return <BlipDropdownButtonComponent
     buttonClass={buttonClass}
@@ -33,8 +33,8 @@ const BlipDropdownButtonContainer = ({
     footer={footer}
   >
     {children}
-  </BlipDropdownButtonComponent>;
-};
+  </BlipDropdownButtonComponent>
+}
 
 BlipDropdownButtonContainer.propTypes = {
   buttonClass: PropTypes.string,
@@ -45,6 +45,6 @@ BlipDropdownButtonContainer.propTypes = {
   onCloseDropdown: PropTypes.func,
   arrowSide: PropTypes.string,
   footer: PropTypes.arrayOf(PropTypes.node),
-};
+}
 
-export { BlipDropdownButtonContainer };
+export { BlipDropdownButtonContainer }

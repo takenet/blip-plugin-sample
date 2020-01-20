@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export const BlipCheckBoxComponent = ({
   label,
@@ -13,11 +13,11 @@ export const BlipCheckBoxComponent = ({
       label &&
       <span>{label}</span>
     }
-  </label>;
-};
+  </label>
+}
 
 BlipCheckBoxComponent.propTypes = {
   label: PropTypes.string,
   checked: PropTypes.bool.isRequired,
   toggleCheck: PropTypes.func,
-};
+}

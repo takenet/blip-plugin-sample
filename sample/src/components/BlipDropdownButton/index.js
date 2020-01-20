@@ -1,4 +1,4 @@
-import { BlipDropdownButtonContainer } from './BlipDropdownButtonContainer';
-import './BlipDropdownButton.scss';
+import { BlipDropdownButtonContainer } from './BlipDropdownButtonContainer'
+import './BlipDropdownButton.scss'
 
-export { BlipDropdownButtonContainer as BlipDropdownButton };
+export { BlipDropdownButtonContainer as BlipDropdownButton }

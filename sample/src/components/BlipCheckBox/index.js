@@ -1,3 +1,3 @@
-import { BlipCheckBoxComponent } from './BlipCheckBoxComponent';
+import { BlipCheckBoxComponent } from './BlipCheckBoxComponent'
 
-export { BlipCheckBoxComponent as BlipCheckBox };
+export { BlipCheckBoxComponent as BlipCheckBox }

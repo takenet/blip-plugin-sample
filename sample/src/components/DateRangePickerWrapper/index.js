@@ -1,1 +1,1 @@
-export { DateRangePickerWrapperComponent as DateRangePickerWrapper } from './DateRangePickerWrapperComponent';
+export { DateRangePickerWrapperComponent as DateRangePickerWrapper } from './DateRangePickerWrapperComponent'

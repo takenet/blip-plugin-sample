@@ -1,4 +1,4 @@
-import { BlipIconComponent } from './BlipIconComponent';
-import './BlipIcon.scss';
+import { BlipIconComponent } from './BlipIconComponent'
+import './BlipIcon.scss'
 
-export { BlipIconComponent as BlipIcon };
+export { BlipIconComponent as BlipIcon }

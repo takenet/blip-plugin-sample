@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const PageTemplateComponent = ({
   children,
@@ -10,12 +10,12 @@ const PageTemplateComponent = ({
         {children}
       </div>
     </div>
-  </>;
-};
+  </>
+}
 
 PageTemplateComponent.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-};
+}
 
-export { PageTemplateComponent };
+export { PageTemplateComponent }

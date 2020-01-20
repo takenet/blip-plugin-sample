@@ -1,12 +1,12 @@
-import { IframeMessageProxy } from 'iframe-message-proxy';
+import { IframeMessageProxy } from 'iframe-message-proxy'
 
 export const getApplication = async () => {
     const { response: application } = await IframeMessageProxy.sendMessage({
         action: 'getApplication',
-    });
+    })
 
-    return application;
-};
+    return application
+}
 
 export const getContacts = async () => {
     const { response: { items } } = await IframeMessageProxy.sendMessage({
@@ -18,10 +18,10 @@ export const getContacts = async () => {
                 uri: '/contacts'
             }
         }
-    });
+    })
     
-    return items;
-};
+    return items
+}
 
 export const getThreads = async () => {
     const { response: { items } } = await IframeMessageProxy.sendMessage({
@@ -33,7 +33,7 @@ export const getThreads = async () => {
                 uri: '/threads'
             }
         }
-    });
-    
-    return items;
-};
+    })
+
+    return items
+}

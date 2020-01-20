@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import icons from './defs.svg';
+import icons from './defs.svg'
 
 export const BlipIconComponent = ({
   name,
@@ -19,12 +19,12 @@ export const BlipIconComponent = ({
     >
       <use xlinkHref={`${icons}#${name}${solid ? '-solid' : '-outline'}`} className={`bp-icon--${color}`}/>
     </svg>
-  );
-};
+  )
+}
 
 BlipIconComponent.propTypes = {
   name: PropTypes.string.isRequired,
   color: PropTypes.string,
   className: PropTypes.string,
   solid: PropTypes.bool,
-};
+}

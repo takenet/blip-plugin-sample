@@ -7,4 +7,4 @@ export const localization =  {
     selected: 'selected',
     emptyMessage: 'No data',
   },
-};
+}

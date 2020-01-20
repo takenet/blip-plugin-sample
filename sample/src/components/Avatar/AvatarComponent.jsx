@@ -1,8 +1,8 @@
-import React from 'react';
-import tenantIcon from './tenant.svg';
-import PropTypes from 'prop-types';
-import { BlipIcon } from 'components/BlipIcon';
-import { BlipLoading } from 'components/BlipLoading';
+import React from 'react'
+import tenantIcon from './tenant.svg'
+import PropTypes from 'prop-types'
+import { BlipIcon } from 'components/BlipIcon'
+import { BlipLoading } from 'components/BlipLoading'
 
 export const AvatarComponent = ({
   img,
@@ -44,8 +44,8 @@ export const AvatarComponent = ({
       </div>
     }
 
-  </div>;
-};
+  </div>
+}
 
 AvatarComponent.propTypes = {
   img: PropTypes.string,
@@ -53,4 +53,4 @@ AvatarComponent.propTypes = {
   updateImage: PropTypes.func.isRequired,
   changePicLabel: PropTypes.string.isRequired,
   isLoading: PropTypes.bool,
-};
+}

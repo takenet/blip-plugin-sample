@@ -1,3 +1,3 @@
-import { PageTemplateComponent } from './PageTemplateComponent';
+import { PageTemplateComponent } from './PageTemplateComponent'
 
-export { PageTemplateComponent as PageTemplate };
+export { PageTemplateComponent as PageTemplate }

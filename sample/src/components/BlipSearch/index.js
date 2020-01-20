@@ -1,4 +1,4 @@
-import { BlipSearchContainer } from './BlipSearchContainer';
-import './BlipSearch.scss';
+import { BlipSearchContainer } from './BlipSearchContainer'
+import './BlipSearch.scss'
 
-export { BlipSearchContainer as BlipSearch };
+export { BlipSearchContainer as BlipSearch }

@@ -1,3 +1,3 @@
-import { BlipInputComponent } from './BlipInputComponent';
+import { BlipInputComponent } from './BlipInputComponent'
 
-export { BlipInputComponent as BlipInput };
+export { BlipInputComponent as BlipInput }

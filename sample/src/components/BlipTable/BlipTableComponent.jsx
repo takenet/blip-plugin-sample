@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { BlipCheckBox } from 'components/BlipCheckBox';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { BlipCheckBox } from 'components/BlipCheckBox'
 
 const Sorter = ({
   property,
@@ -10,15 +10,15 @@ const Sorter = ({
   return <div className="ordinator flex flex-column justify-center mr2 pointer" onClick={() => setSort({ property, order: currentSort.property === property && currentSort.order === 'asc' ? 'desc' : 'asc' })}>
     <span className={`arrow asc mb1 ${currentSort.property === property && currentSort.order === 'asc' ? 'active' : ''}`} ></span>
     <span className={`arrow desc ${currentSort.property === property && currentSort.order === 'desc' ? 'active' : ''}`} ></span>
-  </div>;
-};
+  </div>
+}
 
 
 Sorter.propTypes = {
   property: PropTypes.string.isRequired,
   currentSort: PropTypes.object,
   setSort: PropTypes.func.isRequired,
-};
+}
 
 const BlipTableComponent = ({
   model,
@@ -77,7 +77,7 @@ const BlipTableComponent = ({
           ?
           data.map(
             item => {
-              const isSelected = selectedItems.some(selectedItem => item[idKey] === selectedItem[idKey]);
+              const isSelected = selectedItems.some(selectedItem => item[idKey] === selectedItem[idKey])
               return <tr key={item[idKey]} className={`${isSelected ? 'selected' : ''}`}>
                 {
                   canSelect &&
@@ -95,15 +95,15 @@ const BlipTableComponent = ({
                   canSelect &&
                   <td className='w5'>{item['actions']}</td>
                 }
-              </tr>;
+              </tr>
             }
           )
           :
           <tr className="w-100 bp-bg-offwhite tc"><td className="bp-bg-offwhite" colSpan={model.length + 1}><p className="empty-message pa5">{emptyMessage}</p></td></tr>
       }
     </tbody>
-  </table>;
-};
+  </table>
+}
 
 BlipTableComponent.propTypes = {
   model: PropTypes.array.isRequired,
@@ -120,6 +120,6 @@ BlipTableComponent.propTypes = {
   emptyMessage: PropTypes.string.isRequired,
   isAllSelected: PropTypes.func.isRequired,
   bodyHeight: PropTypes.string.isRequired,
-};
+}
 
-export { BlipTableComponent };
+export { BlipTableComponent }

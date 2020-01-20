@@ -1,1 +1,1 @@
-export { PageHeaderComponent as PageHeader } from './PageHeaderComponent';
+export { PageHeaderComponent as PageHeader } from './PageHeaderComponent'

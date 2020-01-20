@@ -1,8 +1,8 @@
-import React, { useState, useCallback } from 'react';
-import { BlipTableComponent } from './BlipTableComponent';
-import PropTypes from 'prop-types';
-import { useContentLocalizer } from 'hooks/useContentLocalizer';
-import { localization } from './localization';
+import React, { useState, useCallback } from 'react'
+import { BlipTableComponent } from './BlipTableComponent'
+import PropTypes from 'prop-types'
+import { useContentLocalizer } from 'hooks/useContentLocalizer'
+import { localization } from './localization'
 
 const BlipTableContainer = ({
   model,
@@ -16,49 +16,49 @@ const BlipTableContainer = ({
   selectedItems,
   bodyHeight = '200px',
 }) => {
-  const [currentSort, setCurrentSort] = useState({ property: '', order: '' });
+  const [currentSort, setCurrentSort] = useState({ property: '', order: '' })
 
-  const content = useContentLocalizer(localization);
+  const content = useContentLocalizer(localization)
 
   const toggleSelect = (item) => {
-    let tempSelectedItems = [...selectedItems];
+    let tempSelectedItems = [...selectedItems]
     if (selectedItems.some(selectedItem => item[idKey] === selectedItem[idKey])) {
-      tempSelectedItems = tempSelectedItems.filter(selectedItem => item[idKey] !== selectedItem[idKey]);
+      tempSelectedItems = tempSelectedItems.filter(selectedItem => item[idKey] !== selectedItem[idKey])
     } else {
-      tempSelectedItems.push(item);
+      tempSelectedItems.push(item)
     }
-    onItemSelect !== undefined && onItemSelect(tempSelectedItems);
-  };
+    onItemSelect !== undefined && onItemSelect(tempSelectedItems)
+  }
 
   const isAllSelected = useCallback(() => {
     if (selectedItems.length === 0) {
-      return false;
+      return false
     }
-    let itIs = true;
+    let itIs = true
     data.forEach(
       item => {
         if (!selectedItems.some(selectedItem => item[idKey] === selectedItem[idKey])) {
-          itIs = false;
+          itIs = false
         }
       }
-    );
-    return itIs;
-  }, [selectedItems, data, idKey]);
+    )
+    return itIs
+  }, [selectedItems, data, idKey])
 
   const toggleSelectAll = () => {
-    let tempSelectedItems;
+    let tempSelectedItems
     if (isAllSelected()) {
-      tempSelectedItems = [];
+      tempSelectedItems = []
     } else {
-      tempSelectedItems = [...data];
+      tempSelectedItems = [...data]
     }
-    onItemSelect !== undefined && onItemSelect(tempSelectedItems);
-  };
+    onItemSelect !== undefined && onItemSelect(tempSelectedItems)
+  }
 
   const setSort = (sort) => {
-    onSortSet !== undefined && onSortSet(sort);
-    setCurrentSort(sort);
-  };
+    onSortSet !== undefined && onSortSet(sort)
+    setCurrentSort(sort)
+  }
 
   return <BlipTableComponent
     model={model}
@@ -75,8 +75,8 @@ const BlipTableContainer = ({
     emptyMessage={emptyMessage || content.emptyMessage}
     isAllSelected={isAllSelected}
     bodyHeight={bodyHeight}
-  />;
-};
+  />
+}
 
 BlipTableContainer.propTypes = {
   model: PropTypes.array.isRequired,
@@ -89,6 +89,6 @@ BlipTableContainer.propTypes = {
   emptyMessage: PropTypes.string,
   selectedItems: PropTypes.arrayOf(Object).isRequired,
   bodyHeight: PropTypes.string,
-};
+}
 
-export { BlipTableContainer };
+export { BlipTableContainer }

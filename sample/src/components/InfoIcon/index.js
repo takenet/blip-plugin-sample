@@ -1,1 +1,1 @@
-export { InfoIconComponent as InfoIcon } from './InfoIconComponent';
+export { InfoIconComponent as InfoIcon } from './InfoIconComponent'

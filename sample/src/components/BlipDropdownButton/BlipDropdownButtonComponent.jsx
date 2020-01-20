@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const BlipDropdownButtonComponent = ({
   buttonClass,
@@ -33,8 +33,8 @@ const BlipDropdownButtonComponent = ({
         </div>
       </>
     }
-  </div>;
-};
+  </div>
+}
 
 BlipDropdownButtonComponent.propTypes = {
   buttonClass: PropTypes.string,
@@ -45,6 +45,6 @@ BlipDropdownButtonComponent.propTypes = {
   showDropdown: PropTypes.bool.isRequired,
   toggleDropdown: PropTypes.func.isRequired,
   footer: PropTypes.arrayOf(PropTypes.node).isRequired,
-};
+}
 
-export { BlipDropdownButtonComponent };
+export { BlipDropdownButtonComponent }

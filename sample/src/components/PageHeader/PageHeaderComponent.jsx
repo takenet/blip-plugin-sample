@@ -1,5 +1,5 @@
-import React from 'react';
-import Proptypes from 'prop-types';
+import React from 'react'
+import Proptypes from 'prop-types'
 
 export const PageHeaderComponent = ({ title }) => (
   <>
@@ -8,8 +8,8 @@ export const PageHeaderComponent = ({ title }) => (
     </div>
     <div className="bp-divider-h"></div>
   </>
-);
+)
 
 PageHeaderComponent.propTypes = {
   title: Proptypes.string,
-};
+}

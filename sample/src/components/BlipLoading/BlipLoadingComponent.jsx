@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const BlipLoadingComponent = ({
   className,
@@ -19,11 +19,11 @@ const BlipLoadingComponent = ({
       <div className="bp-loading11 bp-loading__circle"></div>
       <div className="bp-loading12 bp-loading__circle"></div>
     </div>
-  </div>;
-};
+  </div>
+}
 
 BlipLoadingComponent.propTypes = {
   className: PropTypes.string,
-};
+}
 
-export { BlipLoadingComponent };
+export { BlipLoadingComponent }

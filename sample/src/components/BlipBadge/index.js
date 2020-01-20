@@ -1,3 +1,3 @@
-import { BlipBadgeComponent } from './BlipBadgeComponent';
+import { BlipBadgeComponent } from './BlipBadgeComponent'
 
-export { BlipBadgeComponent as BlipBadge };
+export { BlipBadgeComponent as BlipBadge }

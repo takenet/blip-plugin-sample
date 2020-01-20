@@ -41,7 +41,7 @@ This sample was made using the React framework.
 
 **`SendCommand`**
 
-Send a blip command.
+Send a blip command. Destination defines the domain which it should send(`msging.net` or `blip.ai`), if you don't know which to choose, leave the default.
 ```
 {
     command: Lime.Command,

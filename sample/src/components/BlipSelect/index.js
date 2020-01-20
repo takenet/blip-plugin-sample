@@ -1,3 +1,3 @@
-import { BlipSelectComponent } from './BlipSelectComponent';
+import { BlipSelectComponent } from './BlipSelectComponent'
 
-export { BlipSelectComponent as BlipSelect };
+export { BlipSelectComponent as BlipSelect }

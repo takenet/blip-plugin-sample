@@ -1,3 +1,3 @@
-import { BlipLoadingComponent } from './BlipLoadingComponent';
+import { BlipLoadingComponent } from './BlipLoadingComponent'
 
-export { BlipLoadingComponent as BlipLoading };
+export { BlipLoadingComponent as BlipLoading }
