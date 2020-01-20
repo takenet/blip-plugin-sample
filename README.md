@@ -28,7 +28,8 @@ This sample was made using the React framework.
 
 * All the communication between your plugin and portal should be made using the browser message API. We highly recommend you to use our official [package][iframe-message] which was been designed to that communication.
 * We recomend you to create plugins with components and colors similar to our design system, we have a official [package][blip-toolkit] to help with that.
-* We have some guidelines to create new pages, we recommend you follow their(it's in portuguese):
+* After the first render of plugin, if the window size is too small, you will have to change it through the `HeightChange` message.
+* We have some guidelines to create new pages, we recommend you to follow their(it's in portuguese):
 
 ![Page guidelines 1](https://i.imgur.com/0gEvaxT.png "Page guidelines 1")
 
