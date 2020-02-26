@@ -1,4 +1,4 @@
-[![Blip-plugin](https://i.imgur.com/6zaam3J.png "Blip-plugin")][blip]
+[![Blip-plugin](https://imgur.com/B8dPNgk.png "Blip-plugin")][blip]
 
 # Blip plugin
 
