@@ -2,13 +2,13 @@
 
 # Blip plugin
 
-Blip plugin it's an technology agnostic way to plug unnoficial features to enhance the portal capabilities.
+Blip plugin is a technology agnostic way to plug unofficial features to enhance the portal capabilities.
 
-This project aims to give the initial skill needed to develop and build your own plugins.
+This project aims to give the fundamental skills needed to develop and build your plugins.
 
 ## Getting started from sample
 
-This sample was made using the React framework.
+This sample was created using the React framework.
 
 1. Download or clone the project from `git`(the recommended way):
 
@@ -22,14 +22,14 @@ This sample was made using the React framework.
 
 `npm start`
 
-4. Now just add the plugin to your chatbot and enjoy!
+4. Now, add the plugin to your chatbot and enjoy it!
 
 ## Good to know
 
-* All the communication between your plugin and portal should be made using the browser message API. We highly recommend you to use our official [package][iframe-message] which was been designed to that communication.
-* We recomend you to create plugins with components and colors similar to our design system, we have a official [package][blip-toolkit] to help with that.
+* All the communication between your plugin and portal should be made using the browser message API. We highly recommend you to use our official [package][iframe-message] which has been designed to that communication.
+* We recommend you to create plugins with components and colors similar to our design system. We have an official [package][blip-toolkit] to help you with that.
 * After the first render of plugin, if the window size is too small, you will have to change it through the `HeightChange` message.
-* We have some guidelines to create new pages, we recommend you to follow their(it's in portuguese):
+* We have some guidelines to create new pages. We recommend you to follow them (it's in Portuguese):
 
 ![Page guidelines 1](https://i.imgur.com/0gEvaxT.png "Page guidelines 1")
 
@@ -41,7 +41,7 @@ This sample was made using the React framework.
 
 **`SendCommand`**
 
-Send a blip command. Destination defines the domain which it should send(`msging.net` or `blip.ai`), if you don't know which to choose, leave the default.
+Send a blip command. Destination defines the domain which you will send(`msging.net` or `blip.ai`) your message. If you don't know which one to choose, leave it at default.
 ```
 {
     command: Lime.Command,
@@ -68,7 +68,7 @@ height: number
 
 **`ShowModal`**
 
-Show a modal to user.
+Show a modal to the user.
 
 ```
 {
@@ -89,7 +89,7 @@ Shows the navbar.
 
 **`GetCurrentLanguage`**
 
-Get the user current language.
+Get the current user language.
 
 **`Toast`**
 
@@ -112,7 +112,7 @@ applicationId?: string
 
 **`HasPermissions`**
 
-Check if user has some permission.
+Check if the user has any permissions.
 
 ```
 {
