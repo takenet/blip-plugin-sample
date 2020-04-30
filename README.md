@@ -2,7 +2,7 @@
 
 # BLiP plugin
 
-BLiP plugin it's an technology agnostic way to plug unnoficial features to enhance the portal capabilities.
+BLiP plugin it's a technology-agnostic way to plug unnoficial features to enhance the portal capabilities.
 
 This project aims to give the initial skill needed to develop and build your own plugins.
 
