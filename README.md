@@ -104,7 +104,7 @@ Create a toast.
 
 **`GetApplication`**
 
-Get a application or the current application.
+Get an application or the current application.
 
 ```
 applicationId?: string
