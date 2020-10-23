@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 import { BlipInput } from 'blip-toolkit'
 
-export const BlipInputReact = (props) => {
+export const BlipInputComponent = (props) => {
   const wrapper = useRef(undefined)
-  const instance = new BlipInput(props)
+  const [instance] = useState(new BlipInput(props))
 
   useEffect(() => {
-    if(instance){
+    if (instance) {
       const element = instance.render(props)
       wrapper.current.appendChild(element)
     }
@@ -16,6 +16,6 @@ export const BlipInputReact = (props) => {
   return <div ref={wrapper} className={props.className} />
 }
 
-BlipInputReact.propTypes={
+BlipInputComponent.propTypes = {
   className: PropTypes.string,
 }
