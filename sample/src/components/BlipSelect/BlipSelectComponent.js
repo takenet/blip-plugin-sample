@@ -4,7 +4,7 @@ import { BlipSelect } from 'blip-toolkit'
 
 const BlipSelectComponent = (props) => {
   const wrapper = useRef(undefined)
-  const instance = new BlipSelect(props)
+  const [instance] = useState(new BlipSelect(props))
 
   useEffect(() => {
     if (instance) {
