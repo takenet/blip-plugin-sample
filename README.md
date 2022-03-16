@@ -41,7 +41,7 @@ This sample was made using the React framework.
 
 **`SendCommand`**
 
-`⚠Warning! Commands sent to 'msging.net' will soon be discontinued and the domain 'blip.ai' should be used instead.`
+`⚠ ⚠ ⚠ Warning! Commands sent to 'msging.net' will soon be discontinued and the domain 'blip.ai' should be used instead.`
 
 Send a blip command. Destination defines the domain which it should send(`msging.net` or `blip.ai`), if you don't know which to choose, leave the default.
 ```
